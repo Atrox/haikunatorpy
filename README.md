@@ -1,11 +1,13 @@
 # Haikunator
 
-[![Build Status](https://travis-ci.org/AtroxDev/haikunator.svg?branch=master)](https://travis-ci.org/atroxdev/haikunator)
+[![Build Status](https://travis-ci.org/AtroxDev/haikunator.svg?branch=master)](https://travis-ci.org/AtroxDev/haikunator)
 
 Generate Heroku-like random names to use in your applications.
 
 ## Installation
-*todo*
+```
+pip install haikunator
+```
 
 ## Usage
 
