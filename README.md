@@ -1,6 +1,8 @@
 # Haikunator
 
-[![Build Status](https://travis-ci.org/AtroxDev/haikunator.svg?branch=master)](https://travis-ci.org/AtroxDev/haikunator)
+[![Build Status](https://img.shields.io/travis/AtroxDev/haikunator.svg?style=flat-square)](https://travis-ci.org/AtroxDev/haikunator)
+[![Latest Version](https://img.shields.io/pypi/v/haikunator.svg?style=flat-square)](https://pypi.python.org/pypi/haikunator)
+
 
 Generate Heroku-like random names to use in your applications.
 
