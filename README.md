@@ -37,6 +37,6 @@ Everyone is encouraged to help improve this project. Here are a few ways you can
 
 Haikunator is also available in other languages. Check them out:
 
-- Python: https://github.com/AtroxDev/haikunator
+- Node: https://github.com/AtroxDev/haikunatorjs
 - Ruby: https://github.com/usmanbashir/haikunator
 - Go: https://github.com/yelinaung/go-haikunator
