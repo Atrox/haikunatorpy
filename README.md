@@ -1,6 +1,6 @@
 # Haikunator
 
-[![Build Status](https://img.shields.io/travis/AtroxDev/haikunator.svg?style=flat-square)](https://travis-ci.org/AtroxDev/haikunator)
+[![Build Status](https://img.shields.io/travis/Atrox/haikunatorpy.svg?style=flat-square)](https://travis-ci.org/Atrox/haikunatorpy)
 [![Latest Version](https://img.shields.io/pypi/v/haikunator.svg?style=flat-square)](https://pypi.python.org/pypi/haikunator)
 
 
@@ -37,6 +37,6 @@ Everyone is encouraged to help improve this project. Here are a few ways you can
 
 Haikunator is also available in other languages. Check them out:
 
-- Node: https://github.com/AtroxDev/haikunatorjs
+- Node: https://github.com/Atrox/haikunatorjs
 - Ruby: https://github.com/usmanbashir/haikunator
 - Go: https://github.com/yelinaung/go-haikunator
