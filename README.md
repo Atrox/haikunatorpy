@@ -28,8 +28,8 @@ haikunate(True) # => "autumn-pine-c42c"
 
 Everyone is encouraged to help improve this project. Here are a few ways you can help:
 
-- [Report bugs](https://github.com/atroxdev/haikunator/issues)
-- Fix bugs and [submit pull requests](https://github.com/atroxdev/haikunator/pulls)
+- [Report bugs](https://github.com/atrox/haikunator/issues)
+- Fix bugs and [submit pull requests](https://github.com/atrox/haikunator/pulls)
 - Write, clarify, or fix documentation
 - Suggest or add new features
 
@@ -38,5 +38,6 @@ Everyone is encouraged to help improve this project. Here are a few ways you can
 Haikunator is also available in other languages. Check them out:
 
 - Node: https://github.com/Atrox/haikunatorjs
+- PHP: https://github.com/Atrox/haikunatorphp
 - Ruby: https://github.com/usmanbashir/haikunator
 - Go: https://github.com/yelinaung/go-haikunator
