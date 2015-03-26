@@ -1,4 +1,4 @@
-# Haikunator
+# HaikunatorPY
 
 [![Build Status](https://img.shields.io/travis/Atrox/haikunatorpy.svg?style=flat-square)](https://travis-ci.org/Atrox/haikunatorpy)
 [![Latest Version](https://img.shields.io/pypi/v/haikunator.svg?style=flat-square)](https://pypi.python.org/pypi/haikunator)
@@ -18,18 +18,37 @@ Haikunator is pretty simple. There is nothing to configure and it only has a sin
 ```python
 from haikunator import haikunate
 
-haikunate() # => "caring-butterfly-0291"
+# default usage
+haikunate() # => "wispy-dust-1337"
 
-# Hex
-haikunate(True) # => "autumn-pine-c42c"
+# custom length (default=4)
+haikunate(tokenLength=6) # => "patient-king-887265"
+
+# use hex instead of numbers
+haikunate(tokenHex=True) # => "purple-breeze-98e1"
+
+# use custom chars instead of numbers/hex
+haikunate(tokenChars='HAIKUNATE') # => "summer-atom-IHEA"
+
+# don't include a token
+haikunate(tokenLength=0) # => "cold-wildflower"
+
+# use a different delimiter
+haikunate(delimiter='.') # => "restless.sea.7976"
+
+# no token, space delimiter
+haikunate(tokenLength=0, delimiter=' ') # => "delicate haze"
+
+# no token, empty delimiter
+haikunate(tokenLength=0, delimiter='') # => "billowingleaf"
 ```
 
 ## Contributing
 
 Everyone is encouraged to help improve this project. Here are a few ways you can help:
 
-- [Report bugs](https://github.com/atrox/haikunator/issues)
-- Fix bugs and [submit pull requests](https://github.com/atrox/haikunator/pulls)
+- [Report bugs](https://github.com/atrox/haikunatorpy/issues)
+- Fix bugs and [submit pull requests](https://github.com/atrox/haikunatorpy/pulls)
 - Write, clarify, or fix documentation
 - Suggest or add new features
 

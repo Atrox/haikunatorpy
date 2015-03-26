@@ -2,9 +2,15 @@ from random import choice
 from six.moves import range
 
 
-def haikunate(hex=False):
-    # example output:
-    # 'dawn-ring-1337'
+def haikunate(delimiter='-', tokenLength=4, tokenHex=False, tokenChars='0123456789'):
+    """
+    Generate Heroku-like random names to use in your applications.
+    :param delimiter:
+    :param tokenLength:
+    :param tokenHex:
+    :param tokenChars:
+    :return: string
+    """
     adjs = ['afternoon', 'aged', 'ancient', 'autumn', 'billowing',
             'bitter', 'black', 'blue', 'bold', 'broken',
             'calm', 'caring', 'cold', 'cool', 'crimson',
@@ -41,9 +47,13 @@ def haikunate(hex=False):
              'waterfall', 'wave', 'wave', 'wildflower', 'wind',
              'wood',
              ]
-    if hex:
-        suffix = '0123456789abcdef'
-    else:
-        suffix = '0123456789'
-    return ('-'.join([choice(adjs), choice(nouns),
-            ''.join(choice(suffix) for x in range(4))]))
+
+    if tokenHex:
+        tokenChars = "0123456789abcdef"
+
+    adj = choice(adjs)
+    noun = choice(nouns)
+    token = ''.join(choice(tokenChars) for _ in range(tokenLength))
+
+    sections = [adj, noun, token]
+    return delimiter.join(filter(None, sections))

@@ -4,7 +4,7 @@ import haikunator
 from setuptools import setup
 
 CLASSIFIERS = [
-    'Development Status :: 3 - Alpha',
+    'Development Status :: 5 - Production/Stable',
     'Intended Audience :: Developers',
     'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
     'Operating System :: OS Independent',
@@ -20,7 +20,7 @@ setup(name='haikunator',
       author_email='mail@atrox.me',
       description='Heroku-like random name generator for python.',
       license='GPLv3',
-      version='0.0.2',
+      version='0.1.0',
       url='https://github.com/Atrox/haikunatorpy',
       packages=['haikunator'],
       test_suite='haikunator.tests',
