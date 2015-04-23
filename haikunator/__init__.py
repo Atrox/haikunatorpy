@@ -1,5 +1,4 @@
 from random import choice
-from six.moves import range
 
 
 def haikunate(delimiter='-', tokenLength=4, tokenHex=False, tokenChars='0123456789'):
@@ -48,7 +47,7 @@ def haikunate(delimiter='-', tokenLength=4, tokenHex=False, tokenChars='01234567
 
     adj = choice(adjs)
     noun = choice(nouns)
-    token = ''.join(choice(tokenChars) for _ in range(tokenLength))
+    token = ''.join(choice(tokenChars) for _ in list(range(tokenLength)))
 
     sections = [adj, noun, token]
     return delimiter.join(filter(None, sections))
