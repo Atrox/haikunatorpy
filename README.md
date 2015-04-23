@@ -58,5 +58,8 @@ Haikunator is also available in other languages. Check them out:
 
 - Node: https://github.com/Atrox/haikunatorjs
 - PHP: https://github.com/Atrox/haikunatorphp
+- .NET: https://github.com/Atrox/haikunator.net
+- Java: https://github.com/Atrox/haikunatorjava
+- Dart: https://github.com/Atrox/haikunatordart
 - Ruby: https://github.com/usmanbashir/haikunator
 - Go: https://github.com/yelinaung/go-haikunator
