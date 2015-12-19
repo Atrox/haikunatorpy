@@ -1,5 +1,4 @@
 #! /usr/bin/env python
-import haikunator
 
 from setuptools import setup
 
@@ -20,7 +19,7 @@ setup(name='haikunator',
       author_email='mail@atrox.me',
       description='Heroku-like random name generator for python.',
       license='BSD',
-      version='0.2.2',
+      version='1.0.0',
       url='https://github.com/Atrox/haikunatorpy',
       packages=['haikunator'],
       test_suite='haikunator.tests',

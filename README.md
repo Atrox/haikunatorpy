@@ -4,7 +4,7 @@
 [![Latest Version](https://img.shields.io/pypi/v/haikunator.svg?style=flat-square)](https://pypi.python.org/pypi/haikunator)
 
 
-Generate Heroku-like random names to use in your applications.
+Generate Heroku-like random names to use in your python applications.
 
 ## Installation
 ```
@@ -22,26 +22,41 @@ from haikunator import haikunate
 haikunate() # => "wispy-dust-1337"
 
 # custom length (default=4)
-haikunate(tokenLength=6) # => "patient-king-887265"
+haikunate(tokenlength=6) # => "patient-king-887265"
 
 # use hex instead of numbers
-haikunate(tokenHex=True) # => "purple-breeze-98e1"
+haikunate(tokenhex=True) # => "purple-breeze-98e1"
 
 # use custom chars instead of numbers/hex
-haikunate(tokenChars='HAIKUNATE') # => "summer-atom-IHEA"
+haikunate(tokenchars='HAIKUNATE') # => "summer-atom-IHEA"
 
 # don't include a token
-haikunate(tokenLength=0) # => "cold-wildflower"
+haikunate(tokenlength=0) # => "cold-wildflower"
 
 # use a different delimiter
 haikunate(delimiter='.') # => "restless.sea.7976"
 
 # no token, space delimiter
-haikunate(tokenLength=0, delimiter=' ') # => "delicate haze"
+haikunate(tokenlength=0, delimiter=' ') # => "delicate haze"
 
 # no token, empty delimiter
-haikunate(tokenLength=0, delimiter='') # => "billowingleaf"
+haikunate(tokenlength=0, delimiter='') # => "billowingleaf"
 ```
+
+## Options
+
+The following options are available:
+
+```python
+haikunate(
+  delimiter='-',
+  tokenlength=4,
+  tokenhex=False,
+  tokenchars='0123456789',
+  seed=None
+)
+```
+*If ```tokenhex``` is true, it overrides any tokens specified in ```tokenchars```*
 
 ## Contributing
 
