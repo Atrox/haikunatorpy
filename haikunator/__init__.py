@@ -1,1 +1,1 @@
-from .haikunator import haikunate
+from .haikunator import Haikunator

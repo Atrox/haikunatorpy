@@ -29,5 +29,5 @@ var/
 pip-log.txt
 pip-delete-this-directory.txt
 
-# IDEA
-.idea
+# Coverage
+.coverage

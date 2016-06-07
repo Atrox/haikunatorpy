@@ -16,31 +16,34 @@ pip install haikunator
 Haikunator is pretty simple. There is nothing to configure and it only has a single method, `haikunate`:
 
 ```python
-from haikunator import haikunate
+from haikunator import Haikunator
+
+haikunator = Haikunator()
+# haikunator = Haikunator(1234) # optional seed
 
 # default usage
-haikunate() # => "wispy-dust-1337"
+haikunator.haikunate() # => "wispy-dust-1337"
 
 # custom length (default=4)
-haikunate(tokenlength=6) # => "patient-king-887265"
+haikunator.haikunate(token_length=6) # => "patient-king-887265"
 
 # use hex instead of numbers
-haikunate(tokenhex=True) # => "purple-breeze-98e1"
+haikunator.haikunate(token_hex=True) # => "purple-breeze-98e1"
 
 # use custom chars instead of numbers/hex
-haikunate(tokenchars='HAIKUNATE') # => "summer-atom-IHEA"
+haikunator.haikunate(token_chars='HAIKUNATE') # => "summer-atom-IHEA"
 
 # don't include a token
-haikunate(tokenlength=0) # => "cold-wildflower"
+haikunator.haikunate(token_length=0) # => "cold-wildflower"
 
 # use a different delimiter
-haikunate(delimiter='.') # => "restless.sea.7976"
+haikunator.haikunate(delimiter='.') # => "restless.sea.7976"
 
 # no token, space delimiter
-haikunate(tokenlength=0, delimiter=' ') # => "delicate haze"
+haikunator.haikunate(token_length=0, delimiter=' ') # => "delicate haze"
 
 # no token, empty delimiter
-haikunate(tokenlength=0, delimiter='') # => "billowingleaf"
+haikunator.haikunate(token_length=0, delimiter='') # => "billowingleaf"
 ```
 
 ## Options
@@ -48,15 +51,22 @@ haikunate(tokenlength=0, delimiter='') # => "billowingleaf"
 The following options are available:
 
 ```python
+from haikunator import Haikunator
+
+haikunator = Haikunator()
+# haikunator = Haikunator(1234) # optional seed
+
+haikunator.adjectives = ['custom', 'adjectives']
+haikunator.nouns = ['custom', 'nouns']
+
 haikunate(
   delimiter='-',
-  tokenlength=4,
-  tokenhex=False,
-  tokenchars='0123456789',
-  seed=None
+  token_length=4,
+  token_hex=False,
+  token_chars='0123456789'
 )
 ```
-*If ```tokenhex``` is true, it overrides any tokens specified in ```tokenchars```*
+*If ```token_hex``` is true, it overrides any tokens specified in ```token_chars```*
 
 ## Contributing
 
@@ -75,6 +85,6 @@ Haikunator is also available in other languages. Check them out:
 - PHP: https://github.com/Atrox/haikunatorphp
 - .NET: https://github.com/Atrox/haikunator.net
 - Java: https://github.com/Atrox/haikunatorjava
+- Go: https://github.com/Atrox/haikunatorgo
 - Dart: https://github.com/Atrox/haikunatordart
 - Ruby: https://github.com/usmanbashir/haikunator
-- Go: https://github.com/yelinaung/go-haikunator
