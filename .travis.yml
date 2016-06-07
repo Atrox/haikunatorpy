@@ -10,6 +10,6 @@ install:
   - pip install coveralls
   - python setup.py install
 
-script: coverage run --source=haikunator\haikunator.py setup.py test
+script: coverage run --source=haikunator/haikunator.py setup.py test
 
 after_success: coveralls

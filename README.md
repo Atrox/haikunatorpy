@@ -2,6 +2,7 @@
 
 [![Build Status](https://img.shields.io/travis/Atrox/haikunatorpy.svg?style=flat-square)](https://travis-ci.org/Atrox/haikunatorpy)
 [![Latest Version](https://img.shields.io/pypi/v/haikunator.svg?style=flat-square)](https://pypi.python.org/pypi/haikunator)
+[![Coverage Status](https://img.shields.io/coveralls/Atrox/haikunatorpy.svg?style=flat-square)](https://coveralls.io/r/Atrox/haikunatorpy)
 
 
 Generate Heroku-like random names to use in your python applications.
