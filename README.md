@@ -20,7 +20,7 @@ Haikunator is pretty simple. There is nothing to configure and it only has a sin
 from haikunator import Haikunator
 
 haikunator = Haikunator()
-# haikunator = Haikunator(1234) # optional seed
+# haikunator = Haikunator(seed='random seed') # optional seed
 
 # default usage
 haikunator.haikunate() # => "wispy-dust-1337"
@@ -54,20 +54,20 @@ The following options are available:
 ```python
 from haikunator import Haikunator
 
-haikunator = Haikunator()
-# haikunator = Haikunator(1234) # optional seed
+haikunator = Haikunator(
+    adjectives=['custom', 'adjectives'],
+    nouns=['custom', 'nouns'],
+    seed='random seed'
+)
 
-haikunator.adjectives = ['custom', 'adjectives']
-haikunator.nouns = ['custom', 'nouns']
-
-haikunate(
+haikunator.haikunate(
   delimiter='-',
   token_length=4,
   token_hex=False,
   token_chars='0123456789'
 )
 ```
-*If ```token_hex``` is true, it overrides any tokens specified in ```token_chars```*
+*If `token_hex` is true, any tokens specified in `token_chars` are ignored*
 
 ## Contributing
 
@@ -87,5 +87,6 @@ Haikunator is also available in other languages. Check them out:
 - .NET: https://github.com/Atrox/haikunator.net
 - Java: https://github.com/Atrox/haikunatorjava
 - Go: https://github.com/Atrox/haikunatorgo
+- Perl: https://github.com/Atrox/haikunatorperl
 - Dart: https://github.com/Atrox/haikunatordart
 - Ruby: https://github.com/usmanbashir/haikunator
